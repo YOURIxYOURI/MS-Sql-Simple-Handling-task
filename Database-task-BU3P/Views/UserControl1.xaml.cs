@@ -34,17 +34,17 @@ namespace Database_task_BU3P.Views
 		}
 		SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\database.mdf;Integrated Security=True;Connect Timeout=30");
 
-		//private void OnChecked(object sender, RoutedEventArgs e)
-		//{
-		//	Registration row = (Registration)((CheckBox)e.Source).DataContext;
-		//	int id = row.Id;
-		//	con.Open();
-		//	SqlCommand cmd = con.CreateCommand();
-		//	cmd.CommandText = $"UPDATE Zgloszenie SET Czy_wykonane = 1 WHERE Id ={id}";
-		//	cmd.ExecuteNonQuery();
-		//	con.Close();
-		//	DataGridView();
-		//}
+		private void OnChecked(bool value, int id)
+		{
+			int data=1;
+			if(!value) { data = 0; }
+			con.Open();
+			SqlCommand cmd = con.CreateCommand();
+			cmd.CommandText = $"UPDATE Zgloszenie SET Czy_wykonane = {data} WHERE Id ={id}";
+			cmd.ExecuteNonQuery();
+			con.Close();
+			DataGridView();
+		}
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			if (!string.IsNullOrEmpty(DescriptionForm.Text) && !string.IsNullOrEmpty(UserForm.Text) && TechnicianList.SelectedValue != null && CategoryList.SelectedValue != null)
@@ -127,7 +127,22 @@ namespace Database_task_BU3P.Views
 			con.Close();
 			dgZgloszenia.ItemsSource = reg;
 		}
+
+		private void DataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+		{
+			if (e.Column is DataGridCheckBoxColumn)
+			{
+				var item = e.Row.Item as Registration;
+
+				var newValue = ((CheckBox)e.EditingElement).IsChecked;
+
+				var id = item.Id;
+				OnChecked((bool)newValue, id);
+
+			}
+		}
 		private void GoToTech(object sender, RoutedEventArgs e) { contentControl.Content = new UserControl2(contentControl); }
 		private void GoToCat(object sender, RoutedEventArgs e) { contentControl.Content = new UserControl3(contentControl); }
+
 }}
 

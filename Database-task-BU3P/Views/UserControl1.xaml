@@ -20,7 +20,7 @@
         <Label Content="Kategoria" HorizontalAlignment="Left" Margin="84,144,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="61"/>
         <ComboBox x:Name="CategoryList" HorizontalAlignment="Left" Margin="173,146,0,0" VerticalAlignment="Top" Width="165" Grid.Column="1" Height="22"/>
         <Button Content="Utwórz" HorizontalAlignment="Left" Margin="242,189,0,0" VerticalAlignment="Top" Height="28" Width="96" Click="Button_Click" Grid.Column="1"/>
-        <DataGrid Name="dgZgloszenia" AutoGenerateColumns="False" Grid.ColumnSpan="2" Margin="0,0,292,0" CanUserAddRows="False">
+        <DataGrid Name="dgZgloszenia" AutoGenerateColumns="False" Grid.ColumnSpan="2" Margin="0,0,292,0" CanUserAddRows="False" CellEditEnding="DataGrid_CellEditEnding">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Nazwa użytkownika" Binding="{Binding User}"/>
