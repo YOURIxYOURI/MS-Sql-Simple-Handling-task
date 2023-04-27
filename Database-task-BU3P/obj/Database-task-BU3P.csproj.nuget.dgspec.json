@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\Database-task-BU3P\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj": {}
+    "C:\\Users\\admin\\Desktop\\Bartosz_ujma\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj": {}
   },
   "projects": {
-    "D:\\projects\\Database-task-BU3P\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj": {
+    "C:\\Users\\admin\\Desktop\\Bartosz_ujma\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Database-task-BU3P\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Bartosz_ujma\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj",
         "projectName": "Database-task-BU3P",
-        "projectPath": "D:\\projects\\Database-task-BU3P\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj",
-        "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Database-task-BU3P\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Bartosz_ujma\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\Database-task-BU3P.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Bartosz_ujma\\MS-Sql-Simple-Handling-task\\Database-task-BU3P\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

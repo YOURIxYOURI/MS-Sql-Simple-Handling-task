@@ -5,6 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Database_task_BU3P"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="850">
+        Title="MainWindow" Height="450" Width="950">
     <ContentControl x:Name="contentControl"/>
 </Window>
